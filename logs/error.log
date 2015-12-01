@@ -1,0 +1,93 @@
+2015-12-01 03:51:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class User could not be found.
+Exception Attributes: array (
+  'class' => 'User',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /user/add
+Stack Trace:
+#0 D:\Project\Cakephp3-Auth-Sample\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-12-01 03:52:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Exception Attributes: array (
+  'class' => 'Users',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /users/add
+Stack Trace:
+#0 D:\Project\Cakephp3-Auth-Sample\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-12-01 03:52:57 Error: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'my_app'@'localhost' (using password: YES)
+Request URL: /users/add
+Stack Trace:
+#0 D:\Project\Cakephp3-Auth-Sample\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('mysql:host=loca...', 'my_app', 'secret', Array)
+#1 D:\Project\Cakephp3-Auth-Sample\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(90): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 D:\Project\Cakephp3-Auth-Sample\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 D:\Project\Cakephp3-Auth-Sample\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 D:\Project\Cakephp3-Auth-Sample\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 D:\Project\Cakephp3-Auth-Sample\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(43): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 D:\Project\Cakephp3-Auth-Sample\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 D:\Project\Cakephp3-Auth-Sample\vendor\cakephp\cakephp\src\ORM\Table.php(422): Cake\Database\Connection->schemaCollection()
+#8 D:\Project\Cakephp3-Auth-Sample\vendor\cakephp\cakephp\src\ORM\Table.php(499): Cake\ORM\Table->schema()
+#9 D:\Project\Cakephp3-Auth-Sample\vendor\cakephp\cakephp\src\View\Form\EntityContext.php(171): Cake\ORM\Table->primaryKey()
+#10 D:\Project\Cakephp3-Auth-Sample\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php(1149): Cake\View\Form\EntityContext->isPrimaryKey('username')
+#11 D:\Project\Cakephp3-Auth-Sample\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php(1129): Cake\View\Helper\FormHelper->_inputType('username', Array)
+#12 D:\Project\Cakephp3-Auth-Sample\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php(987): Cake\View\Helper\FormHelper->_parseOptions('username', Array)
+#13 D:\Project\Cakephp3-Auth-Sample\src\Template\Users\add.ctp(7): Cake\View\Helper\FormHelper->input('username')
+#14 D:\Project\Cakephp3-Auth-Sample\vendor\cakephp\cakephp\src\View\View.php(971): include('D:\Project\Cake...')
+#15 D:\Project\Cakephp3-Auth-Sample\vendor\cakephp\cakephp\src\View\View.php(931): Cake\View\View->_evaluate('D:\Project\Cake...', Array)
+#16 D:\Project\Cakephp3-Auth-Sample\vendor\cakephp\cakephp\src\View\View.php(579): Cake\View\View->_render('D:\Project\Cake...')
+#17 D:\Project\Cakephp3-Auth-Sample\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#18 D:\Project\Cakephp3-Auth-Sample\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#19 D:\Project\Cakephp3-Auth-Sample\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#20 D:\Project\Cakephp3-Auth-Sample\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#21 {main}
+
+
+2015-12-01 03:54:35 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Articles could not be found.
+Exception Attributes: array (
+  'class' => 'Articles',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /articles
+Stack Trace:
+#0 D:\Project\Cakephp3-Auth-Sample\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-12-01 03:54:45 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Articles could not be found.
+Exception Attributes: array (
+  'class' => 'Articles',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /articles
+Stack Trace:
+#0 D:\Project\Cakephp3-Auth-Sample\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-12-01 04:33:10 Error: [Cake\View\Exception\MissingTemplateException] Template file "Users\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users\\index.ctp',
+)
+Request URL: /users
+Stack Trace:
+#0 D:\Project\Cakephp3-Auth-Sample\vendor\cakephp\cakephp\src\View\View.php(576): Cake\View\View->_getViewFileName(NULL)
+#1 D:\Project\Cakephp3-Auth-Sample\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 D:\Project\Cakephp3-Auth-Sample\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 D:\Project\Cakephp3-Auth-Sample\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 D:\Project\Cakephp3-Auth-Sample\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
